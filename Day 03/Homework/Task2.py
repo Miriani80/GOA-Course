@@ -1,0 +1,10 @@
+car1="bmw"
+print(car1)
+mikautadze=2
+print(mikautadze)
+kvaracxelia=5
+print(kvaracxelia)
+phone=4
+ball=8
+print(ball)
+print(phone)
