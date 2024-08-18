@@ -1,0 +1,77 @@
+<!--შექმენით მარტივი ნავიგაციის მენიუ-->
+
+დავალება: შექმენით unordered სია (<ul>) სიის სამი ელემენტით (<li>). თითოეული ელემენტში უნდა იყოს ბმული (<a>) ვებგვერდის სხვა სექციისთვის (მაგ. მთავარი, შესახებ, კონტაქტი).
+დაამატეთ ბმულები href ატრიბუტებით:
+
+დავალება 2: თქვენს მიერ შექმნილ ნავიგაციის მენიუში დაამატეთ href ატრიბუტები <a> ტეგებს, რათა ისინი დაუკავშირდნენ სხვადასხვა განყოფილებებს ან სხვა page-ებს.
+    <!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Navigation Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            float: left;
+        }
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+    </style>
+</head>
+<body>
+    <!--Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">მთავარი</a></li>
+            <li><a href="about.html">შესახებ</a></li>
+            <li><a href="contact.html">კონტაქტი</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
+
+
+HTML კოდი
+<nav> ტეგი შეიცავს ნავიგაციის მენიუს.
+<ul> ტეგი აღნიშნავს unordered სიას.
+<li> ტეგები აღნიშნავენ სიის ელემენტებს.
+<a> ტეგები შეიცავს href ატრიბუტებს, რომლებიც მიუთითებენ შესაბამის ფაილებზე (index.html, about.html, contact.html).
+
+
+
+    CSS სტილი
+    body სტილი აყენებს ფონტს მთელი გვერდისთვის.
+    nav სტილი აყენებს ნავიგაციის მენიუს ფონტს და გადასვლის სტილს.
+    nav ul სტილი აყენებს სიის სტილს.
+    nav ul li სტილი აყენებს სიის ელემენტების სტილს.
+    nav ul li a სტილი აყენებს ბმულების სტილს (ფერი, padding, text-align).
+    nav ul li a:hover სტილი აყენებს hover ეფექტს ბმულებისთვის.
+    
+    
+    
+    
+    
+    ეს კოდი უზრუნველყოფს:
+მარტივ და სუფთა ნავიგაციის მენიუს.
+მომხმარებლისთვის სასიამოვნო და მეგობრულ ინტერფეისს.
+ადაპტირებულ სტილებს, რომლებიც ავტომატურად მოსარგებადია ნებისმიერი მოწყობილობით.

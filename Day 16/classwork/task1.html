@@ -1,0 +1,114 @@
+<!--html ფაილში კომენტარებად ჩამოწერეთ ყველა დღეს ნასწავლი ატრიბუტი და გვერდით მიუწერეთ თითოეულის ფუნქციები-->
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example with Comments</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #333;
+            border-radius: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        .radio-group {
+            margin-bottom: 20px;
+        }
+        .checkbox-group {
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Form element to collect user data -->
+    <form action="#" method="post">
+        <!-- Label for the name field -->
+        <label for="name">Name:</label>
+        <!-- Input field for the user's name -->
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <!-- placeholder attribute provides a hint to the user on what to enter in the field -->
+
+        <!-- Label for the email field -->
+        <label for="email">Email:</label>
+        <!-- Input field for the user's email -->
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <!-- required attribute ensures the email field must be filled out before submitting -->
+
+        <!-- Label for the password field -->
+        <label for="password">Password:</label>
+        <!-- Input field for the user's password -->
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+        <!-- type="password" makes sure the entered text is hidden -->
+
+        <!-- Gender selection using radio buttons -->
+        <div class="radio-group">
+            <label>Gender:</label>
+            <!-- Radio button for Male gender -->
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <!-- Radio button for Female gender -->
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <!-- Radio button for Other gender -->
+            <label><input type="radio" name="gender" value="other"> Other</label>
+            <!-- input[type="radio"] allows for selecting only one option among the radio buttons -->
+        </div>
+
+        <!-- Checkbox to agree to terms and conditions -->
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="terms" required> I agree to the terms and conditions</label>
+            <!-- required attribute ensures the checkbox must be checked before submitting -->
+        </div>
+
+        <!-- Submit button to send the form data -->
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
+
+
+
+კომენტარები ატრიბუტების ფუნქციებით
+placeholder: უზრუნველყოფს მინიშნებას, თუ რა უნდა შეიყვანოს მომხმარებელმა ველში.
+required: უზრუნველყოფს, რომ ველი აუცილებლად შეივსოს ფორმის გაგზავნამდე.
+type="password": უზრუნველყოფს, რომ შეყვანილი ტექსტი პაროლის ველში დაიფაროს და არ გამოჩნდეს ჩვეულებრივ ტექსტად.
+input[type="radio"]: უზრუნველყოფს, რომ რადიო ღილაკებიდან მხოლოდ ერთი აირჩეს ერთდროულად.
+
+
+
+
+

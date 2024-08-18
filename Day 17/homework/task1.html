@@ -1,0 +1,136 @@
+<!--Create a simple HTML form with two input fields: one for the user's name and one for their email address. Add a submit button-->
+
+Add labels to the input fields created in Task 1 to ensure that each field is clearly identified.
+
+Modify the form from Task 1 to include placeholder text in each input field. For example, use "Enter your name" in the name field.
+
+Make the email field required so that the form cannot be submitted without an email address.
+
+Add a password field to the form. Ensure that the text entered in this field is hidden.
+
+Create a set of radio buttons that allow the user to select their gender (e.g., Male, Female, Other). Ensure only one option can be selected at a time.
+
+Add a checkbox that allows users to agree to terms and conditions before submitting the form.
+
+
+
+
+აქ არის HTML ფორმა, რომელიც მოიცავს ყველა მოთხოვნებს, მათ შორის ლეიბლებს, placeholder ტექსტს, ვალდებულ email ველს, პაროლის ველს, რადიო ღილაკებს სქესის არჩევისთვის და checkbox-ს, რომ მომხმარებელს უნდა დაეთანხმოს წესებს და პირობებს ფორმის გაგზავნამდე:
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #333;
+            border-radius: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        .radio-group {
+            margin-bottom: 20px;
+        }
+        .checkbox-group {
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="#" method="post">
+        <!-- Name field -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+
+        <!-- Email field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <!-- Password field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+
+        <!-- Gender selection -->
+        <div class="radio-group">
+            <label>Gender:</label>
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="other"> Other</label>
+        </div>
+
+        <!-- Terms and conditions -->
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="terms" required> I agree to the terms and conditions</label>
+        </div>
+
+        <!-- Submit button -->
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
+
+
+
+
+
+HTML კოდი
+ფორმა:
+<form action="#" method="post"> ქმნის ფორმას.
+<label> ტეგები უზრუნველყოფს თითოეული ველის აღწერას.
+<input type="text" id="name" name="name" placeholder="Enter your name"> ველი მომხმარებლის სახელისთვის placeholder ტექსტით.
+<input type="email" id="email" name="email" placeholder="Enter your email" required> ველი მომხმარებლის email-ისთვის placeholder ტექსტით და required ატრიბუტით.
+<input type="password" id="password" name="password" placeholder="Enter your password"> ველი მომხმარებლის პაროლისთვის placeholder ტექსტით.
+რადიო ღილაკები სქესის არჩევისთვის.
+<input type="checkbox" name="terms" required> checkbox, რომ მომხმარებელი უნდა დაეთანხმოს წესებს და პირობებს.
+<button type="submit">Submit</button> ღილაკი ფორმის გაგზავნისთვის.
+CSS სტილი
+body სტილი აყენებს ფონტს და გვერდის მარჟას.
+form სტილი აყენებს ფორმის ზომას, მარჟას, padding-ს, საზღვარს და მოსახვევებს.
+label სტილი აყენებს ლეიბლების ზომას და სტილს.
+input სტილი აყენებს ტექსტის ველების ზომას, padding-ს და საზღვარს.
+.radio-group და .checkbox-group სტილი აყენებს რადიო ღილაკების და checkbox-ის ჯგუფების მარჟას.
+button სტილი აყენებს ღილაკის padding-ს, საზღვარს და ფონს.
+
+
+
+
+
+

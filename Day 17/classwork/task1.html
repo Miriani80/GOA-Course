@@ -1,0 +1,102 @@
+<!--შექმნათ ფორმა სადაც მომხმარებელი გააკეთებს მანქანის/მოტოციკლეტის შეკვეთას, შეიყვანს სახელს,  გვარს, ტელეფონის ნომერს აირჩევს რომელი მანქანა ან მოტოციკლეტი სურს მას, ბოლოში გააგზავნის submit ის მეშვეობით ამ ინფორმაციას--> 
+
+
+<!--აქ არის HTML ფორმა, სადაც მომხმარებელს შეუძლია გააკეთოს მანქანის ან მოტოციკლეტის შეკვეთა. ფორმა მოიცავს მომხმარებლის სახელისა და გვარის ველებს, ტელეფონის ნომრის ველს, მანქანის ან მოტოციკლეტის არჩევის ველს და submit ღილაკს:-->
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Order Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #333;
+            border-radius: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="tel"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="#" method="post">
+        <!-- Name field -->
+        <label for="first-name">სახელი:</label>
+        <input type="text" id="first-name" name="first-name" placeholder="შეიყვანეთ თქვენი სახელი" required>
+
+        <!-- Last name field -->
+        <label for="last-name">გვარი:</label>
+        <input type="text" id="last-name" name="last-name" placeholder="შეიყვანეთ თქვენი გვარი" required>
+
+        <!-- Phone number field -->
+        <label for="phone">ტელეფონის ნომერი:</label>
+        <input type="tel" id="phone" name="phone" placeholder="შეიყვანეთ თქვენი ტელეფონის ნომერი" required>
+
+        <!-- Vehicle selection -->
+        <label for="vehicle">აირჩიეთ მანქანა ან მოტოციკლეტი:</label>
+        <select id="vehicle" name="vehicle" required>
+            <option value="">აირჩიეთ...</option>
+            <option value="car1">მანქანა 1</option>
+            <option value="car2">მანქანა 2</option>
+            <option value="motorcycle1">მოტოციკლეტი 1</option>
+            <option value="motorcycle2">მოტოციკლეტი 2</option>
+        </select>
+
+        <!-- Submit button -->
+        <button type="submit">გაგზავნა</button>
+    </form>
+
+</body>
+</html>
+HTML კოდი
+ფორმა:
+<form action="#" method="post"> ქმნის ფორმას, რომელიც POST მეთოდით მონაცემებს აგზავნის.
+<label> ტეგები უზრუნველყოფს თითოეული ველის აღწერას.
+<input type="text" id="first-name" name="first-name" placeholder="შეიყვანეთ თქვენი სახელი" required> ველი მომხმარებლის სახელისთვის.
+<input type="text" id="last-name" name="last-name" placeholder="შეიყვანეთ თქვენი გვარი" required> ველი მომხმარებლის გვარისთვის.
+<input type="tel" id="phone" name="phone" placeholder="შეიყვანეთ თქვენი ტელეფონის ნომერი" required> ველი მომხმარებლის ტელეფონის ნომრისთვის.
+<select id="vehicle" name="vehicle" required> არჩევანი, სადაც მომხმარებელს შეუძლია აირჩიოს მანქანა ან მოტოციკლეტი.
+<button type="submit">გაგზავნა</button> ღილაკი ფორმის გაგზავნისთვის.
+CSS სტილი
+body სტილი აყენებს ფონტს და გვერდის მარჟას.
+form სტილი აყენებს ფორმის ზომას, მარჟას, padding-ს, საზღვარს და მოსახვევებს.
+label სტილი აყენებს ლეიბლების ზომას და სტილს.
+input, select სტილი აყენებს ტექსტის ველების და არჩევანის ველების ზომას, padding-ს და საზღვარს.
+button სტილი აყენებს ღილაკის padding-ს, საზღვარს და ფონს.
+
+
+
+
+
+
+
+
+
