@@ -1,0 +1,238 @@
+<!--  3) ააწყვეთ საიტი ნებისმიერ თემაზე თქვენ რაც გაგიხარდებათ, ამ საიტში უნდა იყოს საერთოდ ყველაფერი გამოყენებული რაც აქამდე ვისწავლეთ html ში-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4CAF50;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Travel Blog</h1>
+        <p>Join me on my adventures around the world!</p>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <a href="#destinations">Destinations</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#videos">Videos</a>
+        <a href="#audios">Audios</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+
+        <!-- Destinations Section -->
+        <section id="destinations">
+            <h2>Top Destinations</h2>
+            <p>Here are some of the most amazing places I’ve visited:</p>
+            <ul>
+                <li>Bali, Indonesia</li>
+                <li>Kyoto, Japan</li>
+                <li>Paris, France</li>
+                <li>New York, USA</li>
+                <li>Reykjavik, Iceland</li>
+            </ul>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery">
+            <h2>Travel Gallery</h2>
+            <p>A collection of my favorite travel photos:</p>
+            <img src="https://via.placeholder.com/600x400" alt="Beautiful Beach">
+            <img src="https://via.placeholder.com/600x400" alt="Mountain Range">
+            <img src="https://via.placeholder.com/600x400" alt="Cityscape">
+        </section>
+
+        <!-- Video Section -->
+        <section id="videos">
+            <h2>Travel Videos</h2>
+            <p>Watch some of my travel experiences:</p>
+
+            <h3>Exploring Bali</h3>
+            <video width="320" height="240" controls>
+                <source src="path/to/video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <h3>A Day in Kyoto</h3>
+            <video width="320" height="240" controls>
+                <source src="path/to/video2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <!-- Audio Section -->
+        <section id="audios">
+            <h2>Travel Audios</h2>
+            <p>Listen to the sounds of my travels:</p>
+
+            <h3>Morning in Paris</h3>
+            <audio controls>
+                <source src="path/to/audio1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h3>Waves in Bali</h3>
+            <audio controls>
+                <source src="path/to/audio2.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <!-- Table Section -->
+        <section id="schedule">
+            <h2>Travel Schedule</h2>
+            <p>My upcoming travel plans:</p>
+            <table>
+                <tr>
+                    <th>Destination</th>
+                    <th>Date</th>
+                    <th>Activity</th>
+                </tr>
+                <tr>
+                    <td>London, UK</td>
+                    <td>2024-09-10</td>
+                    <td>City Tour</td>
+                </tr>
+                <tr>
+                    <td>Sydney, Australia</td>
+                    <td>2024-10-05</td>
+                    <td>Beach Day</td>
+                </tr>
+                <tr>
+                    <td>Cape Town, South Africa</td>
+                    <td>2024-11-15</td>
+                    <td>Safari Adventure</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Have any questions or want to share your travel experiences? Fill out the form below:</p>
+            <form action="/submit_form" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name...">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email...">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Write something..." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Travel Blog. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
