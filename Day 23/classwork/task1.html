@@ -1,0 +1,108 @@
+Inline და Block ელემენტები:
+
+Block ელემენტები არის ის ელემენტები, რომლებიც სტრუქტურულად დამოუკიდებლად გამოდიან გვერდზე და იკავებენ მთელ სიგრძეს (ანუ ახალ ხაზს). მაგალითად, <div>, <p>, <h1>, <section> და სხვ. ეს ელემენტები იწყება ახალ ხაზზე და იკავებენ ხელმისაწვდომ სიგანეს.
+
+Inline ელემენტები არ იკავებენ მთელ სიგანეს და ისინი განლაგდებიან სხვა ელემენტებთან ერთად ერთ ხაზზე. მაგალითად, <span>, <a>, <strong> და <em>. Inline ელემენტები მხოლოდ იმ ზომას იკავებენ, რამდენადაც მათში არსებული კონტენტი მოითხოვს.
+
+ახლა, მანქანების საიტის მაგალითი HTML-ში:
+
+html
+კოდის კოპირება
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>მანქანების საიტი</title>
+    <style>
+        /* ზოგადი სტილი */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .car-container {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .car1 {
+            background-color: #3498db; /* ლურჯი ფონი */
+        }
+
+        .car2 {
+            background-color: #e74c3c; /* წითელი ფონი */
+        }
+
+        .car3 {
+            background-color: #f39c12; /* ნარინჯისფერი ფონი */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>მანქანების სამყაროში კეთილი იყოს თქვენი მობრძანება!</h1>
+    </header>
+
+    <main>
+        <section>
+            <div class="car-container car1">
+                <h2>BMW</h2>
+                <p>BMW არის გერმანული ფირმა, რომელიც აწარმოებს მაღალი ხარისხის მანქანებს.</p>
+            </div>
+
+            <div class="car-container car2">
+                <h2>Toyota</h2>
+                <p>Toyota ცნობილია თავისი სანდოობით და ეკონომიკური მანქანებით.</p>
+            </div>
+
+            <div class="car-container car3">
+                <h2>Audi</h2>
+                <p>Audi არის გერმანული ლუქს კლასის მანქანების მწარმოებელი კომპანია.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 მანქანების საიტი - ყველა უფლება დაცულია.</p>
+    </footer>
+
+</body>
+</html>
+ასახსნელად:
+Header: გამოიყენება გვერდის სათაურისა და მისასალმებელი ტექსტის გამოსაჩენად.
+Main: საიტის ძირითადი კონტენტია, რომელიც მოიცავს მანქანების ინფორმაციას.
+Footer: გვერდის ბოლოს განთავსებულია ავტორის უფლებებისა და დამატებითი ინფორმაციისათვის.
+DIV ელემენტები: თითოეული მანქანის ინფორმაცია ჩასმულია ცალკე div-ში, რომელთაც აქვთ განსხვავებული ფონი და ფერები.
+ამ სტრუქტურით მანქანების საიტი გამოიყურება მკაფიოდ და სტილურად.
+
+
+
+
+
+
+
+
+
+
+
